@@ -1,10 +1,19 @@
 {
-    "host": "localhost",
-    "port": 1883,
-    "ring_topic": "ring",
-    "hass_topic": "hass/status",
-    "mqtt_user": "",
-    "mqtt_pass": "",
-    "ring_user": "<ring_email>",
-    "ring_pass": "<ring_password>"
+    "name": "ring-alarm-mqtt",
+    "version": "1.0.0",
+    "slug": "ring-alarm-mqtt",
+    "description": "",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+    "startup": "system",
+    "boot": "auto",
+    "options" : {
+     "host": "localhost",
+     "port": 1883,
+     "ring_topic": "ring",
+     "hass_topic": "hass/status",
+     "mqtt_user": "",
+     "mqtt_pass": "",
+     "ring_user": "<ring_email>",
+     "ring_pass": "<ring_password>"
+     }
 }
